@@ -1,0 +1,34 @@
+div.overlay {
+    float:left;
+    width:200px;
+    height:400px;
+    background-color:#000;
+    opacity:0.5;
+    border-radius:10px;
+
+}
+
+// 진한 테두리
+div.border {
+    position:absolute;
+    top: 0px;
+    left:0px;
+    width:200px;
+    height:400px;
+    border-radius:10px;
+    border-style:solid;
+    border-color: black;
+    border-width: medium;
+}
+
+span.space {
+    float:right;
+    width:700px;
+    height:500px;
+    background-color:#000;
+    opacity:0.5;
+    border-radius:10px;
+    border-style:solid;
+    border-color: black;
+    border-width: medium;
+}
