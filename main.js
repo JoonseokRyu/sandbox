@@ -23,6 +23,7 @@
         .attr("style", "display:block; margin: 0 auto;")
         .append("g")
         .attr("transform", "translate(" + r + "," + r + ")");
+            // .attr("filter", "url(#f0)");
             
     function arcTween(a) {
         var i = d3.interpolate(this._current, a);
@@ -60,6 +61,7 @@
             .each(function(d) { this._current = d; });                  
         path.transition()
             .duration(100)
+            .attr("filter", "url(#i1)")
             .attrTween("d", arcTween);
         
 
