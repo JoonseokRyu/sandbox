@@ -11,14 +11,15 @@
  var refreshRate = 500; // in milliseconds
  var data = [[50, 25, 45, 70, 90, 20, 10, 80],
  [50, 25, 45, 70, 90, 20, 10, 80]];
- // var data = [50,10];
+ var data = [50,10];
  var arc = d3.svg.arc()
      .outerRadius(r)
      .innerRadius(r *2/3);
 
  var pie = d3.layout.pie()
+        // .startAngle(3.14)
      .value(function(d) {
-         return d.value;
+         return -d.value;
      });
 
  var svg = d3.select("svg")
@@ -27,6 +28,7 @@
      .attr("height", h)
      .attr("style", "display:block; margin: 0 auto;")
      .append("g")
+         .attr("filter", "url(#blurFilter)")
      .attr("transform", "translate(" + r + "," + r + ")");
 
  function arcTween(a) {
@@ -41,7 +43,7 @@
  var color = d3.scale.ordinal()
      .domain([0,1,2,3])
      // .domain(["0", "1", "over-time"])
-     .range(["#2d2d2d", "#d49514", "#ef23aa"]); // repectively: green, gray, orange
+     .range(["rgba(21,21,21,0.85)", "#d49514", "#ef23aa"]); // repectively: green, gray, orange
 
  function update(data) {
 
@@ -53,7 +55,7 @@
          .attr("fill", function(d, i) {
              return color(i);
          })
-         .attr("filter", "url(#blurFilter)")
+         // .attr("filter", "url(#blurFilter)")
         .attr("d", arc)
          .each(function(d) {
              this._current = d;
