@@ -25,24 +25,19 @@ span.space {
     float:right;
     width:700px;
     height:500px;
-    background-color:#000;
+    background-color:rgba(0,0,0,0.75);
+    /*background-color:#666;*/
     /*background-color:#FFF;*/
-    opacity:0.75;
+    /*opacity:0.65;*/
     border-radius:10px;
     border-style:solid;
     border-color: white;
     border-width: thin;
 }
 
-/*svg {
-   /*box-shadow: 20px 20px 10px 10px black; */
-    /*-moz-border-radius: 10em 0 5em 2em;*/
-    /*-webkit-border-radius: 10em 0 5em 2em;*/
-    box-shadow: 10px 10px 10px #555555 inset;
-    -moz-box-shadow: 10px 10px 10px #555555 inset;
-    -webkit-box-shadow: 10px 10px 10px #555555 inset;
-}*/
-
+svg {
+    opacity: 1;
+}
 
 .abc {
     position:absolute;
