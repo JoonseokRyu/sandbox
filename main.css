@@ -1,22 +1,20 @@
-div.overlay {
-    float:left;
-    width:200px;
-    height:400px;
-    background-color:#000;
-    opacity:0.5;
-    border-radius:10px;
-
-}
-
-.background {
+div.hSlidebar {
     width:900px;
-    height:500px;
+    height:100%;
     background-color:#000;
     border-radius:10px;
-position: relative
+    position: relative;
 }
 
-.center {
+div.vSlidebar {
+    width:100%;
+    height:300px;
+    background-color:#000;
+    border-radius:10px;
+    position: relative;
+}
+
+div.hSlidebar>.center {
     /*align:center;*/
     /*float: center;*/
      /*text-align: center;*/
@@ -29,10 +27,22 @@ position: relative
    /*transform: translate(0, -50%)*/
 }
 
-.top {
+div.vSlidebar>.center {
+    /*align:center;*/
+    /*float: center;*/
+     /*text-align: center;*/
+    /*margin:auto;*/
+    width:100px;
+    height:100%;
+    background-color:#aaa;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+ .tmp {
     width:auto;
-    height:200px;
-    /*margin-bottom: auto;*/
+    height:100px;
+    /*margin-bottom: auto;
     background-color:#f0f;
     opacity: 0.5;
 /*        position: absolute;
@@ -42,11 +52,27 @@ position: relative
         transform: translatate(-50%, -50%)*/
 }
 
-.bottom {
+.top, .bottom {
     width:auto;
-    height:200px;
+    /*height:100px;*/
+    min-height: 100px;
+    /*column-span :5;*/
     /*margin-bottom: auto;*/
     background-color:#a0f;
+    opacity: 0.5;
+    /*bottom:0;*/
+    /*position: absolute;*/
+/*        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translatate(-50%, -50%)*/
+}
+
+.left,.right {
+    width:50px;
+    height:100%;
+    /*margin-bottom: auto;*/
+    background-color:#f53;
     opacity: 0.5;
 /*        position: absolute;
         top: 50%;
