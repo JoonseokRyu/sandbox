@@ -8,46 +8,49 @@ div.overlay {
 
 }
 
-// 진한 테두리
-div.border {
-    position:absolute;
-    top: 0px;
-    left:0px;
-    width:200px;
-    height:400px;
-    border-radius:10px;
-    border-style:solid;
-    border-color: black;
-    border-width: medium;
-}
-
-span.space {
-    float:right;
-    width:700px;
+.background {
+    width:900px;
     height:500px;
     background-color:#000;
-    /*background-color:#FFF;*/
-    opacity:0.75;
     border-radius:10px;
-    border-style:solid;
-    border-color: white;
-    border-width: thin;
+position: relative
 }
 
-/*svg {
-   /*box-shadow: 20px 20px 10px 10px black; */
-    /*-moz-border-radius: 10em 0 5em 2em;*/
-    /*-webkit-border-radius: 10em 0 5em 2em;*/
-    box-shadow: 10px 10px 10px #555555 inset;
-    -moz-box-shadow: 10px 10px 10px #555555 inset;
-    -webkit-box-shadow: 10px 10px 10px #555555 inset;
-}*/
+.center {
+    /*align:center;*/
+    /*float: center;*/
+     /*text-align: center;*/
+    /*margin:auto;*/
+    width:auto;
+    height:100px;
+    background-color:#aaa;
+   position: relative;               /* 2 */
+   /*top: 50%;                         /* 3 */
+   /*transform: translate(0, -50%)*/
+}
 
+.top {
+    width:auto;
+    height:200px;
+    /*margin-bottom: auto;*/
+    background-color:#f0f;
+    opacity: 0.5;
+/*        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translatate(-50%, -50%)*/
+}
 
-.abc {
-    position:absolute;
-    top: 0px;
-    left:0px;
-    width:200px;
-    height:40px;
+.bottom {
+    width:auto;
+    height:200px;
+    /*margin-bottom: auto;*/
+    background-color:#a0f;
+    opacity: 0.5;
+/*        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translatate(-50%, -50%)*/
 }
